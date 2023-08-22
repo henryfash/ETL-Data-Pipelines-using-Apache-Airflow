@@ -12,4 +12,4 @@ Author an Apache Airflow DAG that will: </br>
 - Load the transformed data 
 
 **Approach** </br>
-- 
+
