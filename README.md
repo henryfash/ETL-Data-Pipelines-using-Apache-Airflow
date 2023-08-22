@@ -4,6 +4,7 @@ You work as a data engineer for a data analytics consulting firm. Your current p
 
 **Objectives**:
 <p>Author an Apache Airflow DAG that will: </p>
+
 - Extract data from a csv file
 - Extract data from a tsv file
 - Extract data from a fixed width file
