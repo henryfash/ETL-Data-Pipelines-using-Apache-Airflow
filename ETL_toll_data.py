@@ -71,7 +71,6 @@ def load_transformed_data():
         cursor.execute("CREATE DATABASE IF NOT EXISTS traffic_data")
         print("Database was created")
 
-
         # connect to database
         try:
             db_config = {
@@ -80,7 +79,6 @@ def load_transformed_data():
             "password": "<password>",
             "database": "traffic_data"
             }
-
             # Create a MySQL connection
             conn = msql.connect(**db_config)
             cursor = conn.cursor()
@@ -115,7 +113,6 @@ def load_transformed_data():
 
     except msql.Error as err:
         print(f"Error: {err}")
-    
     
     finally:
         if 'conn' in locals() and conn.is_connected():
