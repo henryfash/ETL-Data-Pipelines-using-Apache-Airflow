@@ -19,7 +19,8 @@ Author an Apache Airflow DAG that will: </br>
   - unziping
   - extracting fields from csv, tsv and fixed width files
   - combining the extracted data
-  - transforming and loading the combined data
+  - transforming the combined data
+  - and loading the combined data to MySQL database
 - Create tasks in the DAG to call the indivdual functions 
 - Submit the DAG
 - Unpause the DAG
