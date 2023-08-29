@@ -139,7 +139,7 @@ default_args = {
 dag = DAG(
     dag_id='ETL_toll_data',
     default_args=default_args,
-    description='Apache Airflow Final Assignment',
+    description='Apache Airflow ETL for Traffic data',
     schedule_interval=timedelta(days=1),
 )
 
@@ -179,7 +179,7 @@ extract_data_from_tsv =  PythonOperator(
 
 # task to extract data from fixed width file
 extract_data_from_fixed_width =  PythonOperator(
-    task_id='extract_fixedwidth',
+    task_id='extract_fixed_width',
     python_callable=extract_from_fixed_width_file,
     provide_context=True, 
     dag=dag,
